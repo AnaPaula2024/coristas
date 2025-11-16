@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Efetuar Login - Coral Project</title>
+    <link rel="stylesheet" href="assets/css/login.css" />
+  </head>
+  <body>
+    <div class="background-page">
+      <div class="login-card">
+        <div class="header">
+          <div class="logo-placeholder"></div>
+          <h1>Seja bem vindo!</h1>
+        </div>
+
+        <form action="/auth/login" method="POST" class="login-form">
+          <div class="input-group">
+            <label for="email">Email</label>
+            <div class="input-field-container">
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Digite seu email"
+                required
+              />
+              <span class="icon">✉</span>
+            </div>
+          </div>
+
+          <div class="input-group">
+            <label for="senha">Senha</label>
+            <div class="input-field-container">
+              <input
+                type="password"
+                id="senha"
+                name="senha"
+                placeholder="Digite sua senha"
+                required
+              />
+              <span class="icon">🔒</span>
+            </div>
+          </div>
+
+          <button type="submit" class="btn-entrar">ENTRAR</button>
+        </form>
+      </div>
+    </div>
+    <script src="assets/js/login.js"></script>
+  </body>
+</html>
